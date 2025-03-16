@@ -8,7 +8,7 @@
   
   <!-- Metaetiquetas Open Graph para vista previa en WhatsApp y otras redes -->
   <meta property="og:title" content="Invitación al Evento Deportivo">
-  <meta property="og:description" content="Alonso te invita a un Encuentro de Futbol el Sábado 22 de marzo a las 4:00 p.m. en Cancha 'La Bicolor', Calle Jesús Morales 476, Zona B, San Juan de Miraflores. ¡No faltes!">
+  <meta property="og:description" content="Alonso te invita a un Encuentro Deportivo el Sábado 22 de marzo a las 4:00 p.m. en Cancha 'La Bicolor', Calle Jesús Morales 476, Zona B, San Juan de Miraflores. ¡No faltes!">
   <meta property="og:image" content="https://qbandres.github.io/invitacion/fondo.jpg">
   <meta property="og:url" content="https://qbandres.github.io/invitacion/">
   <meta property="og:type" content="website">
@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
   
   <style>
-    /* Tamaño base de fuente reducido para mantener escalas */
+    /* Tamaño base de fuente */
     html {
       font-size: 16px;
     }
@@ -51,7 +51,7 @@
       left: 0;
     }
 
-    /* Contenedor de la invitación con efecto de fade-in */
+    /* Contenedor de la invitación con efecto de fade-in y desplazamiento hacia arriba */
     .invitacion {
       position: relative;
       z-index: 2;
@@ -62,18 +62,24 @@
       border-radius: 15px;
       box-shadow: 0 8px 16px rgba(0,0,0,0.6);
       text-align: center;
-      animation: fadeIn 1.5s ease-in-out;
+      animation: fadeIn 2.5s ease-in-out;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.9); }
-      to { opacity: 1; transform: scale(1); }
+      from { 
+        opacity: 0; 
+        transform: translateY(-20%) scale(0.9);
+      }
+      to { 
+        opacity: 1; 
+        transform: translateY(0) scale(1);
+      }
     }
 
-    /* Estilos para los encabezados y párrafos */
+    /* Estilos para encabezados y párrafos */
     .invitacion h1 {
       font-family: 'Oswald', sans-serif;
-      font-size: 2.2em; /* Escala reducida */
+      font-size: 2.2em;
       margin-bottom: 0.5em;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -82,14 +88,14 @@
     }
 
     .invitacion h2 {
-      font-size: 1.8em; /* Escala reducida */
+      font-size: 1.8em;
       margin: 0.5em 0;
       color: #FFA500;
       text-shadow: 2px 2px 5px #000;
     }
 
     .invitacion p {
-      font-size: 1.1em; /* Escala reducida */
+      font-size: 1.1em;
       margin: 0.5em 0;
       line-height: 1.5;
     }
