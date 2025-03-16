@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <!-- Configuración para dispositivos móviles -->
+  <!-- Asegura que la vista se adapte al tamaño del dispositivo -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Invitación al Evento Deportivo</title>
   
@@ -18,8 +18,13 @@
 
   <!-- Fuentes personalizadas -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
-  
+
   <style>
+    /* Aumenta el tamaño base de la fuente para mayor legibilidad */
+    html {
+      font-size: 18px;
+    }
+
     /* Estilo general del body */
     body {
       margin: 0;
@@ -65,7 +70,7 @@
       to { opacity: 1; transform: scale(1); }
     }
 
-    /* Estilos para los encabezados y párrafos */
+    /* Estilos para encabezados y párrafos */
     .invitacion h1 {
       font-family: 'Oswald', sans-serif;
       font-size: 2.5em;
@@ -93,11 +98,11 @@
       color: #FFD700;
     }
 
-    /* Botón para abrir la ubicación */
+    /* Botón para la ubicación */
     .location-btn {
       display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
+      margin-top: 20px;
+      padding: 12px 24px;
       background: #FFA500;
       color: #fff;
       text-decoration: none;
@@ -110,23 +115,23 @@
       background: #e68a00;
     }
 
-    /* Ajustes responsivos para pantallas pequeñas */
+    /* Ajustes para dispositivos móviles */
     @media (max-width: 600px) {
       .invitacion {
         padding: 20px;
       }
       .invitacion h1 {
-        font-size: 2em;
+        font-size: 2.2em;
       }
       .invitacion h2 {
-        font-size: 1.6em;
+        font-size: 1.8em;
       }
       .invitacion p {
-        font-size: 1em;
+        font-size: 1.4em;
       }
       .location-btn {
-        font-size: 1em;
-        padding: 8px 16px;
+        font-size: 1.2em;
+        padding: 12px 24px;
       }
     }
   </style>
@@ -148,5 +153,3 @@
   </div>
 </body>
 </html>
-
-
