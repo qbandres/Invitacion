@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <!-- Configuración para dispositivos móviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Invitación al Evento Deportivo</title>
   
   <!-- Metaetiquetas Open Graph para vista previa en WhatsApp y otras redes -->
@@ -33,7 +35,7 @@
       text-shadow: 1px 1px 3px #000;
     }
 
-    /* Overlay para oscurecer la imagen de fondo y mejorar la legibilidad */
+    /* Overlay para mejorar la legibilidad */
     .overlay {
       position: absolute;
       width: 100%;
@@ -48,7 +50,7 @@
     .invitacion {
       position: relative;
       z-index: 2;
-      width: 80%;
+      width: 90%;
       max-width: 600px;
       background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(50, 50, 50, 0.8) 100%);
       padding: 30px;
@@ -90,6 +92,43 @@
     .invitacion p strong {
       color: #FFD700;
     }
+
+    /* Botón para abrir la ubicación */
+    .location-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #FFA500;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .location-btn:hover {
+      background: #e68a00;
+    }
+
+    /* Ajustes responsivos para pantallas pequeñas */
+    @media (max-width: 600px) {
+      .invitacion {
+        padding: 20px;
+      }
+      .invitacion h1 {
+        font-size: 2em;
+      }
+      .invitacion h2 {
+        font-size: 1.6em;
+      }
+      .invitacion p {
+        font-size: 1em;
+      }
+      .location-btn {
+        font-size: 1em;
+        padding: 8px 16px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -104,6 +143,10 @@
        Calle Jesús Morales 476, Zona B<br>
        San Juan de Miraflores</p>
     <p>¡No faltes!</p>
+    <!-- Botón para abrir la ubicación en Google Maps -->
+    <a href="https://maps.app.goo.gl/hU9M4vXDGpHJYVkH7" target="_blank" class="location-btn">Ver Ubicación</a>
   </div>
 </body>
 </html>
+
+
